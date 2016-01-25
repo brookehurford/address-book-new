@@ -39,7 +39,7 @@ $(document).ready(function() {
                                 '</div>' +
                                   '<div class="form-group">' +
                                     '<label for="new-countyorstate">County or State</label>' +
-                                    '<input type="text" class="form-control new-country">' +
+                                    '<input type="text" class="form-control new-countyorstate">' +
                                 '</div>' +
                                 '<div class="form-group">' +
                                   '<label for="new-country">Country</label>' +
