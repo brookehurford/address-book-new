@@ -10,7 +10,12 @@ Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
 
-
+function Address(street, town, countyorstate, country) {
+  this.street = street;
+  this.town = town;
+  this.countyorstate = countyorstate;
+  this.country = country;
+}
 
 
 
