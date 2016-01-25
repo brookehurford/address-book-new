@@ -27,8 +27,34 @@
                 <label for="new-last-name">Last Name</label>
                 <input type="text" class="form-control" id="new-last-name">
               </div>
-              <button type="submit" class="btn">Add</button>
+
+              <div id="new-addresses">
+                <div class="new-address">
+                  <div class="form-group">
+                    <label for="new-street">Street</label>
+                    <input type="text" class="form-control new-street">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-village">Village or City</label>
+                    <input type="text" class="form-control new-village">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-countyorstate">County or State</label>
+                    <input type="text" class="form-control new-countyorstate">
+                  </div>
+                  <div class="form-group">
+                    <label for="new-country">Country</label>
+                    <input type="text" class="form-control new-country">
+                  </div>
+                </div>
+              </div>
+              <span class="btn btn-info" id="add-address">Another Address</span>
+              <button type="submit" class="btn btn-info">Add</button>
           </form>
+
+
+
+
           <div class="contact-list">
             <h3>Contacts:</h3>
             <ul id="contacts">
@@ -36,6 +62,9 @@
             </ul>
           </div>
         </div>
+
+
+
 
         <div class="col-md-6">
           <div id="show-contact">

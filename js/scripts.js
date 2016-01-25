@@ -10,15 +10,15 @@ Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
 
-function Address(street, town, countyorstate, country) {
+function Address(street, village, countyorstate, country) {
   this.street = street;
-  this.town = town;
+  this.village = village;
   this.countyorstate = countyorstate;
   this.country = country;
 }
 
 Address.prototype.fullAddress = function() {
-  return this.street + ", " + this.town + ", " + this.countyorstate + ", " + this.country;
+  return this.street + ", " + this.village + ", " + this.countyorstate + ", " + this.country;
 }
 
 
