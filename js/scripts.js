@@ -50,16 +50,35 @@ $(document).ready(function() {
     var userLastName = $("input#new-last-name").val();
     var newContact = new Contact(userFirstName, userLastName);
 
+    $(".new-address").each(function(){
+      var userStreet = $(this).find("input.new-street").val();
+      var userVillage = $(this).find("input.new-village").val();
+      var userCountyorState = $(this).find("input.new-countyorstate").val();
+      var userCountry = $(this).find("input.new-country").val();
+      var newAddress = new Address(userStreet, userVillage, userCountyorState, userCountry)
+      newContact.addresses.push(newAddress)
+    });
+
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
 
     $(".contact").last().click(function() {
       $("#show-contact").show();
       $("#show-contact h3").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
+      $("ul#addresses").text("");
+      newContact.addresses.forEach(function(address){
+        $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
+      });
     });
+
+    $("input#new-first-name").val("");
+    $("input#new-last-name").val("");
+    $("input#new-street").val("");
+    $("input#new-village").val("");
+    $("input#new-countyorstate").val("");
+    $("input#new-country").val("");
+
   });
 });
