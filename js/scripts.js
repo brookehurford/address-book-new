@@ -1,3 +1,5 @@
+// Business Logic //
+
 function Contact(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -7,6 +9,10 @@ function Contact(firstName, lastName) {
 Contact.prototype.fullName = function() {
   return this.firstName + " " + this.lastName;
 }
+
+
+
+
 
 
 
