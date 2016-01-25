@@ -17,7 +17,9 @@ function Address(street, town, countyorstate, country) {
   this.country = country;
 }
 
-
+Address.prototype.fullAddress = function() {
+  return this.street + ", " + this.town + ", " + this.countyorstate + ", " + this.country;
+}
 
 
 

@@ -1,8 +1,8 @@
 describe('Contact', function() {
   it('will create a new contact with the following properties', function(){
-    var testContact = new Contact("Marigold", "Beech");
+    var testContact = new Contact("Marigold", "Crabapple");
     expect(testContact.firstName).to.equal("Marigold");
-    expect(testContact.lastName).to.equal("Beech");
+    expect(testContact.lastName).to.equal("Crabapple");
     expect(testContact.addresses).to.eql([]);
   });
   it('will add the fullName method to a contact', function(){
