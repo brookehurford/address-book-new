@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     var userFirstName = $("input#new-first-name").val();
     var userLastName = $("input#new-last-name").val();
-    var newContact = new Contact(userFirstName, userLastname);
+    var newContact = new Contact(userFirstName, userLastName);
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
