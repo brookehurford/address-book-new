@@ -28,15 +28,24 @@ Address.prototype.fullAddress = function() {
 // User Logic //
 $(document).ready(function() {
   $("#add-address").click(function() {
-    $("#new-addresses").append('<div class="new-address">' + '<div class="form-group">' +
-      '<label for="new-street">Street</label>' +
-      '<input type="text" class="form-control new-street">' + '</div>' + '<div class="form-group">' +
-        '<label for="new-village">Village or City</label>' +
-        '<input type="text" class="form-control new-village">' + '</div>' + '<div class="form-group">' +
-          '<label for="new-countyorstate">County or State</label>' +
-          '<input type="text" class="form-control new-country">' + '</div>' + '<div class="form-group">' +
-            '<label for="new-country">Country</label>' +
-            '<input type="text" class="form-control new-country">' + '</div>' + '</div>');
+    $("#new-addresses").append('<div class="new-address">' +
+                                '<div class="form-group">' +
+                                  '<label for="new-street">Street</label>' +
+                                  '<input type="text" class="form-control new-street">' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                  '<label for="new-village">Village or City</label>' +
+                                  '<input type="text" class="form-control new-village">' +
+                                '</div>' +
+                                  '<div class="form-group">' +
+                                    '<label for="new-countyorstate">County or State</label>' +
+                                    '<input type="text" class="form-control new-country">' +
+                                '</div>' +
+                                '<div class="form-group">' +
+                                  '<label for="new-country">Country</label>' +
+                                  '<input type="text" class="form-control new-country">' +
+                                '</div>' +
+                              '</div>');
   });
 
 
