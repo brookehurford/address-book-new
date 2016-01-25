@@ -19,4 +19,8 @@ describe('Address', function() {
     expect(testAddress.countyorstate).to.equal("Oxfordshire");
     expect(testAddress.country).to.equal("United Kingdom");
   });
+  it('will add fullAddress method to all addresses', function(){
+    var testAddress = new Address("Malt House", "Upper-Slaughter", "Oxfordshire", "United Kingdom");
+    expect(testAddress.fullAddress()).to.equal("Malt House, Upper-Slaughter, Oxfordshire, United Kingdom");
+  });
 });
