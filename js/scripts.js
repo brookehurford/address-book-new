@@ -82,12 +82,6 @@ $(document).ready(function() {
       });
     });
 
-    $("input#new-first-name").val("");
-    $("input#new-last-name").val("");
-    $("input#new-street").val("");
-    $("input#new-village").val("");
-    $("input#new-countyorstate").val("");
-    $("input#new-country").val("");
-
+    $("#new-contact")[0].reset();
   });
 });
