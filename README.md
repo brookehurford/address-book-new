@@ -14,7 +14,6 @@ Navigate to directory.
 $ open index.html
 
 ## Known Bugs
-* When adding another address, the country field is not transmitted correctly.
 * Form does not refresh to original 6 fields after submission.
 
 
