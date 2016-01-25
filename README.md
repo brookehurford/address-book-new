@@ -1,10 +1,10 @@
-# Title of Project
-##### Subtitle
+# Address Book
+#####
 
 #### By Jessica Fix
 
 ## Description
-
+A web application that takes a user's contact information and manipulates it so that it is displayed on the page after submission.
 
 
 ## Setup
