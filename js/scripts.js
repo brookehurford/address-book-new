@@ -85,14 +85,16 @@ $(document).ready(function() {
       });
     });
 
+    // $("li").hover(function() {
+    //   $(this).append( $("<span> ***</span>") );
+    // }, function() {
+    //   $(this).find("span:last").remove();
+    // });
+
     $("#new-contact")[0].reset();
 
     $(".additional-address").not("#new-addresses").hide();
-    // $("#add-address").fadeIn('slow');
-
   });
+
+
 });
-//
-// $(document.form).click(function(){
-//   $("#add-address").fadeIn(200);
-// });
