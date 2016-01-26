@@ -28,7 +28,7 @@ Address.prototype.fullAddress = function() {
 // User Logic //
 $(document).ready(function() {
   $("#add-address").click(function() {
-    $("#new-addresses").append('<div class="new-address">' +
+    $("#new-addresses").append('<div class="additional-address">' +
                                 '<div class="form-group">' +
                                   '<label for="new-street">Street</label>' +
                                   '<input type="text" class="form-control new-street">' +
@@ -68,7 +68,7 @@ $(document).ready(function() {
 
     $("ul#contacts").append("<li><span class='contact'>" + newContact.fullName() + "</span></li>");
 
-
+    debugger;
     $(".contact").last().click(function() {
       $("#show-contact").show();
       $("#show-contact h3").text(newContact.fullName());
@@ -81,5 +81,10 @@ $(document).ready(function() {
     });
 
     $("#new-contact")[0].reset();
+
+    $(".additional-address").not("#new-addresses").hide();
+
   });
+
+
 });
